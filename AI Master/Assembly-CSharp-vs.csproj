@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Camera\CameralControl.cs" />
      <Compile Include="Assets\Scripts\Game Dashboard\GameParameters.cs" />
      <Compile Include="Assets\Scripts\ObjectScripts\ExtractionTower.cs" />
+     <Compile Include="Assets\Scripts\ObjectScripts\Player.cs" />
      <Compile Include="Assets\Scripts\ObjectScripts\SpawnTower.cs" />
      <Compile Include="Assets\Scripts\ObjectScripts\Tank.cs" />
      <Compile Include="Assets\Scripts\Terrain Modules\TerrainCoordinatesAndContent.cs" />

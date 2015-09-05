@@ -8,6 +8,7 @@ public class Tank : MonoBehaviour
 	public int MassCapacityMaximum;
 	public int AttackDamage;
 	public int Speed;
+	GameObject UnityTank = (GameObject)Instantiate (Resources.Load ("Units/SimpleUnit"));
 
 	//Instantaneous states
 	public Vector2 Location;
@@ -22,5 +23,15 @@ public class Tank : MonoBehaviour
 
 		Location = aLocation;
 		MassCapacityCurrent = 0;
+	}
+
+	public void Move(Vector2 achangeCoordiantes)
+	{
+		Location = achangeCoordiantes;
+	}
+
+	public void Draw(ref TerrainCoordinatesAndContent aworldGrid)
+	{
+		UnityTank.transform.position = aworldGrid.BlockToTerrainCoordinate (Location, 1);
 	}
 }
